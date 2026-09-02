@@ -341,7 +341,21 @@ src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=1
 </div>
 
 ---
+---
 
+# `LIVE ENGINE`
+
+<div align="center">
+
+<img
+  src="https://raw.githubusercontent.com/mosabalhashmmey-alt/mosabalhashmmey-alt/main/.github/assets/live-engine.svg"
+  width="100%"
+  alt="Mussab Live Engine"
+/>
+
+</div>
+
+---
 # `08 // SIGNAL HISTORY`
 
 <div align="center">
