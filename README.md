@@ -31,6 +31,17 @@ src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=2
 </div>
 
 ---
+<div align="center">
+
+<img
+  src="https://raw.githubusercontent.com/mosabalhashmmey-alt/mosabalhashmmey-alt/main/.github/assets/mussab-core.svg?v=2"
+  width="100%"
+  alt="Mussab Core"
+/>
+
+</div>
+
+---
 
 # `01 // IDENTITY`
 
