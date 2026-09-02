@@ -1,16 +1,60 @@
-## Hi there 👋
+<h1 align="center">Hi, I'm Mussab 👋</h1>
 
-<!--
-**mosabalhashmmey-alt/mosabalhashmmey-alt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h3 align="center">
+IT Student • Developer • Building at MADAR LABS
+</h3>
 
-Here are some ideas to get you started:
+<p align="center">
+I enjoy building web applications, experimenting with cloud technologies,
+and turning ideas into real digital projects.
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### 🚀 Currently working on
+
+- MADAR LABS
+- Madar Code Playground
+- Web & Cloud projects
+- Improving my software development skills
+
+### 🛠️ Technologies & Tools
+
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,python,git,github,vscode,cloudflare" />
+</p>
+
+### 🌱 Currently learning
+
+- Full-Stack Development
+- Cloud Computing
+- AWS
+- Databases
+- Software Engineering
+
+### 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mosabalhashmmey-alt&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mosabalhashmmey-alt&theme=github_dark" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mosabalhashmmey-alt&theme=github_dark" />
+</p>
+
+### 🔥 Contribution Streak
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=mosabalhashmmey-alt&theme=github-dark-blue&hide_border=true" />
+</p>
+
+### 📁 GitHub
+
+More projects and experiments coming soon.
+
+---
+
+<p align="center">
+  <i>Build. Learn. Improve. Repeat.</i>
+</p>
