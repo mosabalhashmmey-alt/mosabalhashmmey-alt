@@ -209,7 +209,21 @@ Software Engineering
 </details>
 
 ---
+---
 
+# `PROJECT COMMAND CENTER`
+
+<div align="center">
+
+<img
+  src="https://raw.githubusercontent.com/mosabalhashmmey-alt/mosabalhashmmey-alt/main/.github/assets/project-command-center.svg"
+  width="100%"
+  alt="Mussab Project Command Center"
+/>
+
+</div>
+
+---
 # `04 // PROJECT CONSTELLATION`
 
 <div align="center">
