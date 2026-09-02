@@ -1,0 +1,43 @@
+name: Generate Project Command Center
+
+on:
+  push:
+    paths:
+      - ".github/data/projects.json"
+      - ".github/scripts/generate_project_center.py"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Generate Project Command Center SVG
+        run: |
+          python .github/scripts/generate_project_center.py
+
+      - name: Commit generated SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .github/assets/project-command-center.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update Project Command Center"
+            git push
+          fi
