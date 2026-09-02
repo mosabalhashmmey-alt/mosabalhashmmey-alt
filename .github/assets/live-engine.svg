@@ -1,0 +1,740 @@
+<svg
+    width="1200"
+    height="590"
+    viewBox="0 0 1200 590"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+
+<defs>
+
+    <linearGradient
+        id="background"
+        x1="0"
+        y1="0"
+        x2="1200"
+        y2="590"
+        gradientUnits="userSpaceOnUse"
+    >
+        <stop offset="0%" stop-color="#020617"/>
+        <stop offset="38%" stop-color="#071126"/>
+        <stop offset="72%" stop-color="#18143F"/>
+        <stop offset="100%" stop-color="#082F49"/>
+    </linearGradient>
+
+    <linearGradient
+        id="neon"
+        x1="0"
+        y1="0"
+        x2="1200"
+        y2="0"
+    >
+        <stop offset="0%" stop-color="#22D3EE"/>
+        <stop offset="45%" stop-color="#3B82F6"/>
+        <stop offset="72%" stop-color="#8B5CF6"/>
+        <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <linearGradient
+        id="bar"
+        x1="0"
+        y1="0"
+        x2="1"
+        y2="0"
+    >
+        <stop offset="0%" stop-color="#0EA5E9"/>
+        <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <radialGradient
+        id="radarGlow"
+        cx="0"
+        cy="0"
+        r="1"
+        gradientUnits="userSpaceOnUse"
+        gradientTransform="translate(962 265) rotate(90) scale(200)"
+    >
+        <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.25"/>
+        <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient
+        id="radarSweep"
+        x1="0"
+        y1="0"
+        x2="1"
+        y2="1"
+    >
+        <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.75"/>
+        <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern
+        id="grid"
+        width="28"
+        height="28"
+        patternUnits="userSpaceOnUse"
+    >
+        <path
+            d="M28 0 L0 0 0 28"
+            fill="none"
+            stroke="#64748B"
+            stroke-opacity="0.08"
+        />
+    </pattern>
+
+    <filter
+        id="glow"
+        x="-60%"
+        y="-60%"
+        width="220%"
+        height="220%"
+    >
+        <feGaussianBlur
+            stdDeviation="3"
+            result="blur"
+        />
+
+        <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+
+</defs>
+
+
+<!-- ===================================================== -->
+<!-- BACKGROUND -->
+<!-- ===================================================== -->
+
+<rect
+    width="1200"
+    height="590"
+    rx="26"
+    fill="url(#background)"
+/>
+
+<rect
+    width="1200"
+    height="590"
+    rx="26"
+    fill="url(#grid)"
+/>
+
+<rect
+    x="1"
+    y="1"
+    width="1198"
+    height="588"
+    rx="25"
+    fill="none"
+    stroke="url(#neon)"
+    stroke-opacity="0.55"
+    stroke-width="2"
+/>
+
+<rect
+    width="1200"
+    height="3"
+    fill="url(#neon)"
+    filter="url(#glow)"
+/>
+
+
+<!-- ===================================================== -->
+<!-- HEADER -->
+<!-- ===================================================== -->
+
+<text
+    x="60"
+    y="52"
+    fill="#8B5CF6"
+    font-family="monospace"
+    font-size="14"
+    letter-spacing="2"
+>
+    MUSSAB // LIVE ENGINE
+</text>
+
+<text
+    x="60"
+    y="93"
+    fill="#FFFFFF"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="38"
+    font-weight="700"
+>
+    REAL-TIME DEVELOPMENT SIGNAL
+</text>
+
+<text
+    x="62"
+    y="121"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="13"
+>
+    GitHub activity → parsed → analyzed → rendered
+</text>
+
+
+<rect
+    x="950"
+    y="48"
+    width="184"
+    height="34"
+    rx="17"
+    fill="#06101F"
+    stroke="#22D3EE"
+    stroke-opacity="0.25"
+/>
+
+<circle
+    cx="974"
+    cy="65"
+    r="5"
+    fill="#22C55E"
+    filter="url(#glow)"
+>
+    <animate
+        attributeName="opacity"
+        values="1;0.3;1"
+        dur="1.5s"
+        repeatCount="indefinite"
+    />
+</circle>
+
+<text
+    x="990"
+    y="69"
+    fill="#CBD5E1"
+    font-family="monospace"
+    font-size="12"
+>
+    LIVE DATA
+</text>
+
+
+<!-- ===================================================== -->
+<!-- LATEST ACTIVITY -->
+<!-- ===================================================== -->
+
+<rect
+    x="58"
+    y="150"
+    width="705"
+    height="116"
+    rx="20"
+    fill="#040A18"
+    fill-opacity="0.68"
+    stroke="#22D3EE"
+    stroke-opacity="0.15"
+/>
+
+<text
+    x="82"
+    y="180"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="11"
+    letter-spacing="1"
+>
+    LATEST ACTIVITY
+</text>
+
+<text
+    x="82"
+    y="215"
+    fill="#F8FAFC"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="24"
+    font-weight="650"
+>
+    No recent public activity
+</text>
+
+<text
+    x="82"
+    y="242"
+    fill="#38BDF8"
+    font-family="monospace"
+    font-size="12"
+>
+    —
+</text>
+
+
+<!-- ===================================================== -->
+<!-- RADAR -->
+<!-- ===================================================== -->
+
+<rect
+    x="787"
+    y="150"
+    width="347"
+    height="272"
+    rx="20"
+    fill="#040A18"
+    fill-opacity="0.65"
+    stroke="#8B5CF6"
+    stroke-opacity="0.16"
+/>
+
+<rect
+    x="787"
+    y="150"
+    width="347"
+    height="272"
+    rx="20"
+    fill="url(#radarGlow)"
+/>
+
+<text
+    x="812"
+    y="180"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="11"
+    letter-spacing="1"
+>
+    ACTIVITY RADAR
+</text>
+
+<circle
+    cx="960"
+    cy="290"
+    r="95"
+    fill="none"
+    stroke="#22D3EE"
+    stroke-opacity="0.20"
+/>
+
+<circle
+    cx="960"
+    cy="290"
+    r="70"
+    fill="none"
+    stroke="#8B5CF6"
+    stroke-opacity="0.18"
+/>
+
+<circle
+    cx="960"
+    cy="290"
+    r="44"
+    fill="none"
+    stroke="#22D3EE"
+    stroke-opacity="0.15"
+/>
+
+<line
+    x1="865"
+    y1="290"
+    x2="1055"
+    y2="290"
+    stroke="#CBD5E1"
+    stroke-opacity="0.10"
+/>
+
+<line
+    x1="960"
+    y1="195"
+    x2="960"
+    y2="385"
+    stroke="#CBD5E1"
+    stroke-opacity="0.10"
+/>
+
+
+<g transform="translate(960 290)">
+
+    <path
+        d="M0 0 L0 -93 A93 93 0 0 1 80 -47 Z"
+        fill="url(#radarSweep)"
+    >
+        <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="0"
+            to="360"
+            dur="5s"
+            repeatCount="indefinite"
+        />
+    </path>
+
+    <line
+        x1="0"
+        y1="0"
+        x2="0"
+        y2="-92"
+        stroke="#22D3EE"
+        stroke-width="2"
+        filter="url(#glow)"
+    >
+        <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="0"
+            to="360"
+            dur="5s"
+            repeatCount="indefinite"
+        />
+    </line>
+
+</g>
+
+
+<circle
+    cx="960"
+    cy="290"
+    r="6"
+    fill="#FFFFFF"
+    filter="url(#glow)"
+/>
+
+<circle cx="1007" cy="246" r="5" fill="#22D3EE" filter="url(#glow)">
+    <animate attributeName="r" values="4;7;4" dur="2s" repeatCount="indefinite"/>
+</circle>
+
+<circle cx="1018" cy="323" r="5" fill="#8B5CF6" filter="url(#glow)">
+    <animate attributeName="r" values="4;7;4" dur="2.4s" repeatCount="indefinite"/>
+</circle>
+
+<circle cx="916" cy="333" r="5" fill="#38BDF8" filter="url(#glow)">
+    <animate attributeName="r" values="4;7;4" dur="1.8s" repeatCount="indefinite"/>
+</circle>
+
+
+<!-- ===================================================== -->
+<!-- DATA CARDS -->
+<!-- ===================================================== -->
+
+<rect
+    x="58"
+    y="286"
+    width="220"
+    height="136"
+    rx="18"
+    fill="#040A18"
+    fill-opacity="0.68"
+    stroke="#8B5CF6"
+    stroke-opacity="0.14"
+/>
+
+<text
+    x="80"
+    y="315"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10"
+>
+    LATEST REPOSITORY
+</text>
+
+<text
+    x="80"
+    y="348"
+    fill="#F8FAFC"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="20"
+    font-weight="650"
+>
+    mosabalhashmmey...
+</text>
+
+<text
+    x="80"
+    y="374"
+    fill="#A5B4FC"
+    font-family="monospace"
+    font-size="11"
+>
+    created 1h ago
+</text>
+
+<text
+    x="80"
+    y="401"
+    fill="#38BDF8"
+    font-family="monospace"
+    font-size="11"
+>
+    TOP LANGUAGE // HTML
+</text>
+
+
+<rect
+    x="297"
+    y="286"
+    width="220"
+    height="136"
+    rx="18"
+    fill="#040A18"
+    fill-opacity="0.68"
+    stroke="#22D3EE"
+    stroke-opacity="0.14"
+/>
+
+<text
+    x="319"
+    y="315"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10"
+>
+    REPOSITORY SIGNAL
+</text>
+
+<text
+    x="319"
+    y="350"
+    fill="#FFFFFF"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="27"
+    font-weight="700"
+>
+    4
+</text>
+
+<text
+    x="361"
+    y="349"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="11"
+>
+    PUBLIC REPOS
+</text>
+
+<text
+    x="319"
+    y="382"
+    fill="#FFFFFF"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+>
+    1
+</text>
+
+<text
+    x="350"
+    y="381"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="11"
+>
+    ACTIVE / 30D
+</text>
+
+<text
+    x="319"
+    y="405"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10"
+>
+    followers // 0
+</text>
+
+
+<rect
+    x="536"
+    y="286"
+    width="227"
+    height="136"
+    rx="18"
+    fill="#040A18"
+    fill-opacity="0.68"
+    stroke="#8B5CF6"
+    stroke-opacity="0.14"
+/>
+
+<text
+    x="558"
+    y="315"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10"
+>
+    COMMIT SIGNAL
+</text>
+
+<text
+    x="558"
+    y="355"
+    fill="#FFFFFF"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="34"
+    font-weight="700"
+>
+    0
+</text>
+
+<text
+    x="609"
+    y="354"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="11"
+>
+    COMMITS
+</text>
+
+<text
+    x="558"
+    y="382"
+    fill="#A5B4FC"
+    font-family="monospace"
+    font-size="11"
+>
+    public activity / 30 days
+</text>
+
+<text
+    x="558"
+    y="405"
+    fill="#38BDF8"
+    font-family="monospace"
+    font-size="10"
+>
+    signal acquired
+</text>
+
+
+<!-- ===================================================== -->
+<!-- ACTIVITY SIGNAL BARS -->
+<!-- ===================================================== -->
+
+<rect
+    x="58"
+    y="444"
+    width="530"
+    height="104"
+    rx="18"
+    fill="#040A18"
+    fill-opacity="0.68"
+    stroke="#22D3EE"
+    stroke-opacity="0.13"
+/>
+
+<text
+    x="80"
+    y="470"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10"
+    letter-spacing="1"
+>
+    SIGNAL MATRIX
+</text>
+
+
+<text x="80" y="493" fill="#CBD5E1" font-family="monospace" font-size="10">CODE</text>
+
+<rect x="148" y="484" width="260" height="9" rx="5" fill="#172033"/>
+<rect x="148" y="484" width="0" height="9" rx="5" fill="url(#bar)"/>
+
+<text x="430" y="493" fill="#64748B" font-family="monospace" font-size="10">0%</text>
+
+
+<text x="80" y="513" fill="#CBD5E1" font-family="monospace" font-size="10">PROJECTS</text>
+
+<rect x="148" y="504" width="260" height="9" rx="5" fill="#172033"/>
+<rect x="148" y="504" width="46" height="9" rx="5" fill="url(#bar)"/>
+
+<text x="430" y="513" fill="#64748B" font-family="monospace" font-size="10">18%</text>
+
+
+<text x="80" y="533" fill="#CBD5E1" font-family="monospace" font-size="10">SHIP</text>
+
+<rect x="148" y="524" width="260" height="9" rx="5" fill="#172033"/>
+<rect x="148" y="524" width="31" height="9" rx="5" fill="url(#bar)"/>
+
+<text x="430" y="533" fill="#64748B" font-family="monospace" font-size="10">12%</text>
+
+
+<!-- ===================================================== -->
+<!-- LAST TRANSMISSION -->
+<!-- ===================================================== -->
+
+<rect
+    x="610"
+    y="444"
+    width="524"
+    height="104"
+    rx="18"
+    fill="#040A18"
+    fill-opacity="0.68"
+    stroke="#8B5CF6"
+    stroke-opacity="0.14"
+/>
+
+<text
+    x="632"
+    y="470"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10"
+    letter-spacing="1"
+>
+    LAST TRANSMISSIONS
+</text>
+
+<text
+    x="632"
+    y="494"
+    fill="#E2E8F0"
+    font-family="monospace"
+    font-size="11"
+>
+    &gt; waiting for next transmission...
+</text>
+
+<text
+    x="632"
+    y="515"
+    fill="#CBD5E1"
+    font-family="monospace"
+    font-size="11"
+>
+    &gt; waiting for next transmission...
+</text>
+
+<text
+    x="632"
+    y="536"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="11"
+>
+    &gt; waiting for next transmission...
+</text>
+
+
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
+
+<text
+    x="61"
+    y="574"
+    fill="#475569"
+    font-family="monospace"
+    font-size="10"
+>
+    AUTO-GENERATED FROM GITHUB DATA
+</text>
+
+<text
+    x="918"
+    y="574"
+    fill="#475569"
+    font-family="monospace"
+    font-size="10"
+>
+    LAST SYNC // 2026-09-03 00:58 UTC+03
+</text>
+
+</svg>
