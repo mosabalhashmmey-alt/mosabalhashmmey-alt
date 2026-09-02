@@ -1,0 +1,360 @@
+<svg
+  width="1200"
+  height="250"
+  viewBox="0 0 1200 250"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- ===================================================== -->
+    <!-- BACKGROUND -->
+    <!-- ===================================================== -->
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="250">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="45%" stop-color="#071126"/>
+      <stop offset="75%" stop-color="#17143D"/>
+      <stop offset="100%" stop-color="#082F49"/>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="42%" stop-color="#3B82F6"/>
+      <stop offset="72%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <radialGradient
+      id="orb"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(1030 65) rotate(90) scale(170 300)"
+    >
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path
+        d="M30 0 L0 0 0 30"
+        fill="none"
+        stroke="#64748B"
+        stroke-opacity="0.07"
+      />
+    </pattern>
+
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+
+  <!-- ======================================================= -->
+  <!-- BASE -->
+  <!-- ======================================================= -->
+
+  <rect
+    width="1200"
+    height="250"
+    rx="26"
+    fill="url(#bg)"
+  />
+
+  <rect
+    width="1200"
+    height="250"
+    rx="26"
+    fill="url(#grid)"
+  />
+
+  <rect
+    width="1200"
+    height="250"
+    rx="26"
+    fill="url(#orb)"
+  />
+
+  <rect
+    x="1"
+    y="1"
+    width="1198"
+    height="248"
+    rx="25"
+    fill="none"
+    stroke="url(#neon)"
+    stroke-opacity="0.50"
+    stroke-width="2"
+  />
+
+  <rect
+    width="1200"
+    height="3"
+    fill="url(#neon)"
+    filter="url(#glow)"
+  />
+
+
+  <!-- ======================================================= -->
+  <!-- LEFT HEADER -->
+  <!-- ======================================================= -->
+
+  <text
+    x="55"
+    y="48"
+    fill="#8B5CF6"
+    font-family="monospace"
+    font-size="13"
+    letter-spacing="2"
+  >
+    MUSSAB // CURRENT MISSION
+  </text>
+
+  <text
+    x="55"
+    y="84"
+    fill="#FFFFFF"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="30"
+    font-weight="700"
+  >
+    BUILD. LEARN. ITERATE.
+  </text>
+
+  <text
+    x="56"
+    y="108"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="11"
+  >
+    ACTIVE DEVELOPMENT TRAJECTORY
+  </text>
+
+
+  <!-- ======================================================= -->
+  <!-- MISSION ITEMS -->
+  <!-- ======================================================= -->
+
+  <!-- Mission 01 -->
+
+  <circle
+    cx="70"
+    cy="146"
+    r="5"
+    fill="#22D3EE"
+    filter="url(#glow)"
+  >
+    <animate
+      attributeName="opacity"
+      values="1;0.35;1"
+      dur="1.8s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <text
+    x="90"
+    y="151"
+    fill="#E2E8F0"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="16"
+    font-weight="600"
+  >
+    Learning cloud systems
+  </text>
+
+
+  <!-- Mission 02 -->
+
+  <circle
+    cx="70"
+    cy="181"
+    r="5"
+    fill="#3B82F6"
+    filter="url(#glow)"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.35;1;0.35"
+      dur="2.1s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <text
+    x="90"
+    y="186"
+    fill="#E2E8F0"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="16"
+    font-weight="600"
+  >
+    Building practical web products
+  </text>
+
+
+  <!-- Mission 03 -->
+
+  <circle
+    cx="70"
+    cy="216"
+    r="5"
+    fill="#8B5CF6"
+    filter="url(#glow)"
+  >
+    <animate
+      attributeName="opacity"
+      values="1;0.35;1"
+      dur="2.4s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <text
+    x="90"
+    y="221"
+    fill="#E2E8F0"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="16"
+    font-weight="600"
+  >
+    Sharpening software engineering skills
+  </text>
+
+
+  <!-- ======================================================= -->
+  <!-- RIGHT STATUS PANEL -->
+  <!-- ======================================================= -->
+
+  <rect
+    x="760"
+    y="48"
+    width="375"
+    height="154"
+    rx="20"
+    fill="#040A18"
+    fill-opacity="0.68"
+    stroke="#8B5CF6"
+    stroke-opacity="0.20"
+  />
+
+  <text
+    x="790"
+    y="77"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10"
+    letter-spacing="1.2"
+  >
+    MISSION CONTROL
+  </text>
+
+
+  <!-- status -->
+
+  <circle
+    cx="793"
+    cy="107"
+    r="5"
+    fill="#22C55E"
+    filter="url(#glow)"
+  >
+    <animate
+      attributeName="opacity"
+      values="1;0.25;1"
+      dur="1.5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <text
+    x="810"
+    y="112"
+    fill="#22C55E"
+    font-family="monospace"
+    font-size="13"
+    font-weight="700"
+  >
+    IN PROGRESS
+  </text>
+
+
+  <!-- divider -->
+
+  <line
+    x1="790"
+    y1="130"
+    x2="1105"
+    y2="130"
+    stroke="#334155"
+    stroke-opacity="0.70"
+  />
+
+
+  <text
+    x="790"
+    y="154"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10"
+  >
+    OPERATING MODE
+  </text>
+
+  <text
+    x="790"
+    y="177"
+    fill="#A5B4FC"
+    font-family="monospace"
+    font-size="12"
+  >
+    explore → understand → build → ship
+  </text>
+
+
+  <!-- ======================================================= -->
+  <!-- MOVING SCAN -->
+  <!-- ======================================================= -->
+
+  <rect
+    x="-220"
+    y="0"
+    width="180"
+    height="250"
+    fill="#22D3EE"
+    opacity="0.025"
+    transform="skewX(-18)"
+  >
+    <animate
+      attributeName="x"
+      values="-220;1350"
+      dur="7s"
+      repeatCount="indefinite"
+    />
+  </rect>
+
+
+  <!-- ======================================================= -->
+  <!-- FOOTER -->
+  <!-- ======================================================= -->
+
+  <text
+    x="918"
+    y="230"
+    fill="#475569"
+    font-family="monospace"
+    font-size="9"
+  >
+    mission.status = ACTIVE
+  </text>
+
+</svg>
