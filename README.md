@@ -115,7 +115,26 @@ src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=1
 </div>
 
 ---
+<details>
+<summary><code>&gt; sudo access mussab.core</code></summary>
 
+<br/>
+
+<div align="center">
+
+<img
+  src="https://raw.githubusercontent.com/mosabalhashmmey-alt/mosabalhashmmey-alt/main/.github/assets/secret-terminal.svg"
+  width="100%"
+  alt="Mussab Secret Terminal"
+/>
+
+</div>
+
+<br/>
+
+</details>
+
+---
 # `03 // KNOWLEDGE ORBIT`
 
 ```mermaid
