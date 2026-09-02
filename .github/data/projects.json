@@ -1,0 +1,66 @@
+{
+  "projects": [
+    {
+      "name": "Simple To-Do List",
+      "slug": "simple-todo-list",
+      "status": "SHIPPED",
+      "category": "Web Application",
+      "description": "A clean task management application focused on simplicity, productivity, and responsive interaction.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite"
+      ],
+      "repository": "https://github.com/mosabalhashmmey-alt/simple-todo-list",
+      "live_url": "",
+      "featured": true
+    },
+    {
+      "name": "Madar Code Playground",
+      "slug": "madar-code-playground",
+      "status": "ACTIVE",
+      "category": "Developer Platform",
+      "description": "An interactive programming learning environment with compilers, coding challenges, tutorials, and developer tools.",
+      "technologies": [
+        "Web",
+        "JavaScript",
+        "Cloudflare",
+        "GitHub"
+      ],
+      "repository": "https://github.com/mosabalhashmmey-alt/madar-code-playground",
+      "live_url": "",
+      "featured": true
+    },
+    {
+      "name": "MADAR LABS Digital Studio",
+      "slug": "madar-labs-digital-studio",
+      "status": "ACTIVE",
+      "category": "Digital Studio",
+      "description": "The digital presence and experimental technology space behind MADAR LABS projects and products.",
+      "technologies": [
+        "Web",
+        "GitHub",
+        "Cloudflare"
+      ],
+      "repository": "https://github.com/mosabalhashmmey-alt/madar-labs-digital-studio",
+      "live_url": "",
+      "featured": true
+    },
+    {
+      "name": "GitHub Profile Engine",
+      "slug": "github-profile-engine",
+      "status": "ACTIVE",
+      "category": "Automation",
+      "description": "A custom GitHub profile system powered by animated SVG interfaces, automated workflows, live activity data, and generated visual components.",
+      "technologies": [
+        "Python",
+        "GitHub Actions",
+        "SVG",
+        "GitHub API"
+      ],
+      "repository": "https://github.com/mosabalhashmmey-alt/mosabalhashmmey-alt",
+      "live_url": "https://github.com/mosabalhashmmey-alt",
+      "featured": true
+    }
+  ]
+}
