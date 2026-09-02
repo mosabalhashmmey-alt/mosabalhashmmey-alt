@@ -90,7 +90,21 @@ src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=1
 </div>
 
 ---
+---
 
+# `CURRENT MISSION`
+
+<div align="center">
+
+<img
+  src="https://raw.githubusercontent.com/mosabalhashmmey-alt/mosabalhashmmey-alt/main/.github/assets/current-mission.svg"
+  width="100%"
+  alt="Mussab Current Mission"
+/>
+
+</div>
+
+---
 # `02 // TECH MATRIX`
 
 <div align="center">
