@@ -1,218 +1,1019 @@
 <svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+
+    <!-- ===================================================== -->
+    <!-- BACKGROUND -->
+    <!-- ===================================================== -->
+
+    <linearGradient
+      id="bg"
+      x1="0"
+      y1="0"
+      x2="1200"
+      y2="320"
+      gradientUnits="userSpaceOnUse"
+    >
       <stop offset="0%" stop-color="#020617"/>
       <stop offset="45%" stop-color="#0B1023"/>
       <stop offset="75%" stop-color="#1D1B4B"/>
       <stop offset="100%" stop-color="#0EA5E9"/>
     </linearGradient>
 
-    <radialGradient id="orb1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 72) rotate(90) scale(180 240)">
+
+    <!-- ===================================================== -->
+    <!-- GLOW ORBS -->
+    <!-- ===================================================== -->
+
+    <radialGradient
+      id="orb1"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(930 72) rotate(90) scale(180 240)"
+    >
       <stop stop-color="#8B5CF6" stop-opacity="0.9"/>
       <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="orb2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 260) rotate(90) scale(160 220)">
+
+    <radialGradient
+      id="orb2"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(250 260) rotate(90) scale(160 220)"
+    >
       <stop stop-color="#06B6D4" stop-opacity="0.55"/>
       <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
     </radialGradient>
 
-    <linearGradient id="neonLine" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+
+    <!-- ===================================================== -->
+    <!-- NEON GRADIENT -->
+    <!-- ===================================================== -->
+
+    <linearGradient
+      id="neonLine"
+      x1="0"
+      y1="0"
+      x2="1200"
+      y2="0"
+      gradientUnits="userSpaceOnUse"
+    >
       <stop offset="0%" stop-color="#0EA5E9"/>
       <stop offset="50%" stop-color="#8B5CF6"/>
       <stop offset="100%" stop-color="#22D3EE"/>
     </linearGradient>
 
-    <linearGradient id="cardStroke" x1="0" y1="0" x2="1" y2="1">
+
+    <!-- ===================================================== -->
+    <!-- CARD BORDER -->
+    <!-- ===================================================== -->
+
+    <linearGradient
+      id="cardStroke"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="1"
+    >
       <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45"/>
       <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.45"/>
       <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.2"/>
     </linearGradient>
 
-    <filter id="glowBlue" x="-50%" y="-50%" width="200%" height="200%">
+
+    <!-- ===================================================== -->
+    <!-- GLOW FILTERS -->
+    <!-- ===================================================== -->
+
+    <filter
+      id="glowBlue"
+      x="-50%"
+      y="-50%"
+      width="200%"
+      height="200%"
+    >
       <feGaussianBlur stdDeviation="8" result="blur"/>
+
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
+
     </filter>
 
-    <filter id="glowSoft" x="-50%" y="-50%" width="200%" height="200%">
+
+    <filter
+      id="glowSoft"
+      x="-50%"
+      y="-50%"
+      width="200%"
+      height="200%"
+    >
       <feGaussianBlur stdDeviation="3" result="blur"/>
+
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
+
     </filter>
 
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-opacity="0.55" stroke-width="1"/>
+
+    <!-- ===================================================== -->
+    <!-- GRID -->
+    <!-- ===================================================== -->
+
+    <pattern
+      id="grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse"
+    >
+      <path
+        d="M 32 0 L 0 0 0 32"
+        fill="none"
+        stroke="#1E293B"
+        stroke-opacity="0.55"
+        stroke-width="1"
+      />
     </pattern>
 
-    <pattern id="scanPattern" width="8" height="8" patternUnits="userSpaceOnUse">
-      <rect width="8" height="4" fill="#FFFFFF" fill-opacity="0.018"/>
+
+    <!-- ===================================================== -->
+    <!-- CRT SCAN LINES -->
+    <!-- ===================================================== -->
+
+    <pattern
+      id="scanPattern"
+      width="8"
+      height="8"
+      patternUnits="userSpaceOnUse"
+    >
+      <rect
+        width="8"
+        height="4"
+        fill="#FFFFFF"
+        fill-opacity="0.018"
+      />
     </pattern>
+
+
+    <!-- ===================================================== -->
+    <!-- CLIPPING -->
+    <!-- ===================================================== -->
 
     <clipPath id="clipBanner">
-      <rect x="0" y="0" width="1200" height="320" rx="22"/>
+      <rect
+        x="0"
+        y="0"
+        width="1200"
+        height="320"
+        rx="22"
+      />
     </clipPath>
+
   </defs>
 
+
+  <!-- ======================================================= -->
+  <!-- MAIN CONTAINER -->
+  <!-- ======================================================= -->
+
   <g clip-path="url(#clipBanner)">
-    <!-- Background -->
-    <rect width="1200" height="320" rx="22" fill="url(#bg)"/>
-    <rect width="1200" height="320" rx="22" fill="url(#grid)"/>
-    <rect width="1200" height="320" rx="22" fill="url(#scanPattern)"/>
 
-    <!-- Orbs -->
-    <ellipse cx="930" cy="72" rx="220" ry="170" fill="url(#orb1)">
-      <animate attributeName="cx" values="930;900;930" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="72;82;72" dur="7s" repeatCount="indefinite"/>
+
+    <!-- ===================================================== -->
+    <!-- BACKGROUND -->
+    <!-- ===================================================== -->
+
+    <rect
+      width="1200"
+      height="320"
+      rx="22"
+      fill="url(#bg)"
+    />
+
+    <rect
+      width="1200"
+      height="320"
+      rx="22"
+      fill="url(#grid)"
+    />
+
+    <rect
+      width="1200"
+      height="320"
+      rx="22"
+      fill="url(#scanPattern)"
+    />
+
+
+    <!-- ===================================================== -->
+    <!-- MOVING GLOW ORBS -->
+    <!-- ===================================================== -->
+
+    <ellipse
+      cx="930"
+      cy="72"
+      rx="220"
+      ry="170"
+      fill="url(#orb1)"
+    >
+
+      <animate
+        attributeName="cx"
+        values="930;900;930"
+        dur="8s"
+        repeatCount="indefinite"
+      />
+
+      <animate
+        attributeName="cy"
+        values="72;82;72"
+        dur="7s"
+        repeatCount="indefinite"
+      />
+
     </ellipse>
 
-    <ellipse cx="250" cy="260" rx="180" ry="130" fill="url(#orb2)">
-      <animate attributeName="cx" values="250;285;250" dur="9s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="260;245;260" dur="6s" repeatCount="indefinite"/>
+
+    <ellipse
+      cx="250"
+      cy="260"
+      rx="180"
+      ry="130"
+      fill="url(#orb2)"
+    >
+
+      <animate
+        attributeName="cx"
+        values="250;285;250"
+        dur="9s"
+        repeatCount="indefinite"
+      />
+
+      <animate
+        attributeName="cy"
+        values="260;245;260"
+        dur="6s"
+        repeatCount="indefinite"
+      />
+
     </ellipse>
 
-    <!-- Top neon strip -->
-    <rect x="0" y="0" width="1200" height="4" fill="url(#neonLine)" filter="url(#glowBlue)">
-      <animate attributeName="opacity" values="0.8;1;0.85;1" dur="4s" repeatCount="indefinite"/>
+
+    <!-- ===================================================== -->
+    <!-- TOP NEON STRIP -->
+    <!-- ===================================================== -->
+
+    <rect
+      x="0"
+      y="0"
+      width="1200"
+      height="4"
+      fill="url(#neonLine)"
+      filter="url(#glowBlue)"
+    >
+
+      <animate
+        attributeName="opacity"
+        values="0.8;1;0.85;1"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+
     </rect>
 
-    <!-- Sweeping scan line -->
-    <rect x="-240" y="0" width="240" height="320" fill="url(#neonLine)" opacity="0.075" transform="skewX(-18)">
-      <animate attributeName="x" values="-260;1280" dur="5.5s" repeatCount="indefinite"/>
+
+    <!-- ===================================================== -->
+    <!-- MOVING SCANNER -->
+    <!-- ===================================================== -->
+
+    <rect
+      x="-240"
+      y="0"
+      width="240"
+      height="320"
+      fill="url(#neonLine)"
+      opacity="0.075"
+      transform="skewX(-18)"
+    >
+
+      <animate
+        attributeName="x"
+        values="-260;1280"
+        dur="5.5s"
+        repeatCount="indefinite"
+      />
+
     </rect>
 
-    <!-- Decorative circuit lines -->
+
+    <!-- ===================================================== -->
+    <!-- DECORATIVE CIRCUITS -->
+    <!-- ===================================================== -->
+
     <g opacity="0.55">
-      <path d="M65 65 H245 M245 65 V100 H318" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="2"/>
+
+      <path
+        d="M65 65 H245 M245 65 V100 H318"
+        stroke="#38BDF8"
+        stroke-opacity="0.45"
+        stroke-width="2"
+      />
+
       <circle cx="65" cy="65" r="4" fill="#38BDF8"/>
       <circle cx="245" cy="65" r="4" fill="#38BDF8"/>
       <circle cx="318" cy="100" r="4" fill="#8B5CF6"/>
 
-      <path d="M1038 250 H1110 V215 H1150" stroke="#8B5CF6" stroke-opacity="0.42" stroke-width="2"/>
+
+      <path
+        d="M1038 250 H1110 V215 H1150"
+        stroke="#8B5CF6"
+        stroke-opacity="0.42"
+        stroke-width="2"
+      />
+
       <circle cx="1038" cy="250" r="4" fill="#8B5CF6"/>
       <circle cx="1110" cy="250" r="4" fill="#8B5CF6"/>
       <circle cx="1150" cy="215" r="4" fill="#22D3EE"/>
+
     </g>
 
-    <!-- Particle dots -->
+
+    <!-- ===================================================== -->
+    <!-- FLOATING PARTICLES -->
+    <!-- ===================================================== -->
+
     <g filter="url(#glowSoft)">
-      <circle cx="120" cy="118" r="2.4" fill="#22D3EE">
-        <animate attributeName="cy" values="118;108;118" dur="3.2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.25;1;0.25" dur="2.7s" repeatCount="indefinite"/>
+
+      <circle
+        cx="120"
+        cy="118"
+        r="2.4"
+        fill="#22D3EE"
+      >
+
+        <animate
+          attributeName="cy"
+          values="118;108;118"
+          dur="3.2s"
+          repeatCount="indefinite"
+        />
+
+        <animate
+          attributeName="opacity"
+          values="0.25;1;0.25"
+          dur="2.7s"
+          repeatCount="indefinite"
+        />
+
       </circle>
-      <circle cx="145" cy="140" r="2" fill="#8B5CF6">
-        <animate attributeName="cy" values="140;126;140" dur="4.2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.8s" repeatCount="indefinite"/>
+
+
+      <circle
+        cx="145"
+        cy="140"
+        r="2"
+        fill="#8B5CF6"
+      >
+
+        <animate
+          attributeName="cy"
+          values="140;126;140"
+          dur="4.2s"
+          repeatCount="indefinite"
+        />
+
+        <animate
+          attributeName="opacity"
+          values="0.2;0.9;0.2"
+          dur="2.8s"
+          repeatCount="indefinite"
+        />
+
       </circle>
-      <circle cx="1035" cy="82" r="2.4" fill="#38BDF8">
-        <animate attributeName="cy" values="82;95;82" dur="3.7s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.25;1;0.25" dur="3s" repeatCount="indefinite"/>
+
+
+      <circle
+        cx="1035"
+        cy="82"
+        r="2.4"
+        fill="#38BDF8"
+      >
+
+        <animate
+          attributeName="cy"
+          values="82;95;82"
+          dur="3.7s"
+          repeatCount="indefinite"
+        />
+
+        <animate
+          attributeName="opacity"
+          values="0.25;1;0.25"
+          dur="3s"
+          repeatCount="indefinite"
+        />
+
       </circle>
-      <circle cx="1072" cy="102" r="2" fill="#A78BFA">
-        <animate attributeName="cy" values="102;90;102" dur="4.8s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.5s" repeatCount="indefinite"/>
+
+
+      <circle
+        cx="1072"
+        cy="102"
+        r="2"
+        fill="#A78BFA"
+      >
+
+        <animate
+          attributeName="cy"
+          values="102;90;102"
+          dur="4.8s"
+          repeatCount="indefinite"
+        />
+
+        <animate
+          attributeName="opacity"
+          values="0.2;0.85;0.2"
+          dur="2.5s"
+          repeatCount="indefinite"
+        />
+
       </circle>
-      <circle cx="925" cy="245" r="2.6" fill="#22D3EE">
-        <animate attributeName="cy" values="245;232;245" dur="3.4s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.9s" repeatCount="indefinite"/>
+
+
+      <circle
+        cx="925"
+        cy="245"
+        r="2.6"
+        fill="#22D3EE"
+      >
+
+        <animate
+          attributeName="cy"
+          values="245;232;245"
+          dur="3.4s"
+          repeatCount="indefinite"
+        />
+
+        <animate
+          attributeName="opacity"
+          values="0.2;1;0.2"
+          dur="2.9s"
+          repeatCount="indefinite"
+        />
+
       </circle>
+
     </g>
 
-    <!-- Left status card -->
-    <rect x="52" y="48" width="230" height="224" rx="18" fill="#050B18" fill-opacity="0.55" stroke="url(#cardStroke)" stroke-width="1.4"/>
-    <text x="74" y="80" fill="#A5F3FC" font-family="monospace" font-size="15">SYSTEM STATUS</text>
 
-    <circle cx="84" cy="108" r="6" fill="#22C55E" filter="url(#glowSoft)">
-      <animate attributeName="fill-opacity" values="0.65;1;0.65" dur="1.4s" repeatCount="indefinite"/>
-    </circle>
-    <text x="100" y="114" fill="#E2E8F0" font-family="monospace" font-size="17">online</text>
+    <!-- ===================================================== -->
+    <!-- LEFT SYSTEM STATUS CARD -->
+    <!-- ===================================================== -->
 
-    <text x="74" y="146" fill="#64748B" font-family="monospace" font-size="14">role</text>
-    <text x="74" y="166" fill="#F8FAFC" font-family="monospace" font-size="18">Developer / Builder</text>
+    <rect
+      x="52"
+      y="48"
+      width="230"
+      height="224"
+      rx="18"
+      fill="#050B18"
+      fill-opacity="0.55"
+      stroke="url(#cardStroke)"
+      stroke-width="1.4"
+    />
 
-    <text x="74" y="198" fill="#64748B" font-family="monospace" font-size="14">focus</text>
-    <text x="74" y="218" fill="#C4B5FD" font-family="monospace" font-size="17">Web • Cloud • Software</text>
 
-    <text x="74" y="248" fill="#64748B" font-family="monospace" font-size="14">mode</text>
-    <text x="74" y="268" fill="#67E8F9" font-family="monospace" font-size="17">always learning</text>
-
-    <!-- Center title -->
-    <text x="600" y="102" text-anchor="middle" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="50" letter-spacing="1.2">
-      MUSSAB ALHASHMMEY
-      <animate attributeName="opacity" values="0.96;1;0.97;1" dur="4s" repeatCount="indefinite"/>
+    <text
+      x="74"
+      y="80"
+      fill="#A5F3FC"
+      font-family="monospace"
+      font-size="15"
+    >
+      SYSTEM STATUS
     </text>
 
-    <text x="600" y="136" text-anchor="middle" fill="#D8B4FE" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="20" letter-spacing="1">
+
+    <circle
+      cx="84"
+      cy="108"
+      r="6"
+      fill="#22C55E"
+      filter="url(#glowSoft)"
+    >
+
+      <animate
+        attributeName="fill-opacity"
+        values="0.65;1;0.65"
+        dur="1.4s"
+        repeatCount="indefinite"
+      />
+
+    </circle>
+
+
+    <text
+      x="100"
+      y="114"
+      fill="#E2E8F0"
+      font-family="monospace"
+      font-size="17"
+    >
+      online
+    </text>
+
+
+    <text
+      x="74"
+      y="146"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="14"
+    >
+      role
+    </text>
+
+    <text
+      x="74"
+      y="166"
+      fill="#F8FAFC"
+      font-family="monospace"
+      font-size="18"
+    >
+      Developer / Builder
+    </text>
+
+
+    <text
+      x="74"
+      y="198"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="14"
+    >
+      focus
+    </text>
+
+    <text
+      x="74"
+      y="218"
+      fill="#C4B5FD"
+      font-family="monospace"
+      font-size="16"
+    >
+      Web • Cloud • Software
+    </text>
+
+
+    <text
+      x="74"
+      y="248"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="14"
+    >
+      mode
+    </text>
+
+    <text
+      x="74"
+      y="268"
+      fill="#67E8F9"
+      font-family="monospace"
+      font-size="16"
+    >
+      always learning
+    </text>
+
+
+    <!-- ===================================================== -->
+    <!-- CENTER IDENTITY -->
+    <!-- ===================================================== -->
+
+    <text
+      x="600"
+      y="102"
+      text-anchor="middle"
+      fill="#F8FAFC"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-weight="700"
+      font-size="46"
+      letter-spacing="1"
+    >
+
+      MUSSAB ALHASHMMEY
+
+      <animate
+        attributeName="opacity"
+        values="0.96;1;0.97;1"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+
+    </text>
+
+
+    <text
+      x="600"
+      y="136"
+      text-anchor="middle"
+      fill="#D8B4FE"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-weight="600"
+      font-size="19"
+      letter-spacing="1"
+    >
       Developer • Builder • Explorer
     </text>
 
-    <text x="600" y="168" text-anchor="middle" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="18">
+
+    <text
+      x="600"
+      y="168"
+      text-anchor="middle"
+      fill="#CBD5E1"
+      font-family="Segoe UI, Arial, sans-serif"
+      font-size="16"
+    >
       Building digital ideas with clean systems, modern tools, and a curious mindset.
     </text>
 
-    <!-- Animated terminal style line -->
-    <rect x="358" y="194" width="484" height="46" rx="12" fill="#050B18" fill-opacity="0.55" stroke="#334155" stroke-opacity="0.65"/>
-    <text x="382" y="223" fill="#8B5CF6" font-family="monospace" font-size="24">&gt; initializing mussab_core...</text>
-    <rect x="760" y="206" width="10" height="18" fill="#22D3EE">
-      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+
+    <!-- ===================================================== -->
+    <!-- TERMINAL MODULE -->
+    <!-- ===================================================== -->
+
+    <rect
+      x="358"
+      y="194"
+      width="484"
+      height="46"
+      rx="12"
+      fill="#050B18"
+      fill-opacity="0.55"
+      stroke="#334155"
+      stroke-opacity="0.65"
+    />
+
+
+    <text
+      x="382"
+      y="223"
+      fill="#8B5CF6"
+      font-family="monospace"
+      font-size="22"
+    >
+      &gt; initializing mussab_core...
+    </text>
+
+
+    <rect
+      x="795"
+      y="206"
+      width="10"
+      height="18"
+      rx="2"
+      fill="#22D3EE"
+    >
+
+      <animate
+        attributeName="opacity"
+        values="1;0;1"
+        dur="1s"
+        repeatCount="indefinite"
+      />
+
     </rect>
 
-    <!-- Right telemetry card -->
-    <rect x="902" y="48" width="248" height="224" rx="18" fill="#050B18" fill-opacity="0.55" stroke="url(#cardStroke)" stroke-width="1.4"/>
 
-    <text x="926" y="80" fill="#A5F3FC" font-family="monospace" font-size="15">TELEMETRY</text>
+    <!-- ===================================================== -->
+    <!-- RIGHT TELEMETRY CARD -->
+    <!-- ===================================================== -->
 
-    <text x="926" y="118" fill="#64748B" font-family="monospace" font-size="13">CURRENT TARGET</text>
-    <text x="926" y="140" fill="#F8FAFC" font-family="monospace" font-size="18">Build better things</text>
+    <rect
+      x="902"
+      y="48"
+      width="248"
+      height="224"
+      rx="18"
+      fill="#050B18"
+      fill-opacity="0.55"
+      stroke="url(#cardStroke)"
+      stroke-width="1.4"
+    />
 
-    <text x="926" y="172" fill="#64748B" font-family="monospace" font-size="13">TRAJECTORY</text>
-    <text x="926" y="194" fill="#67E8F9" font-family="monospace" font-size="18">Learning ↑ Shipping ↑</text>
 
-    <text x="926" y="226" fill="#64748B" font-family="monospace" font-size="13">SIGNAL</text>
-    <text x="926" y="248" fill="#C4B5FD" font-family="monospace" font-size="18">Creative • Focused • Consistent</text>
+    <text
+      x="926"
+      y="80"
+      fill="#A5F3FC"
+      font-family="monospace"
+      font-size="15"
+    >
+      TELEMETRY
+    </text>
 
-    <!-- Tiny animated bar chart -->
+
+    <text
+      x="926"
+      y="118"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="12"
+    >
+      CURRENT TARGET
+    </text>
+
+
+    <text
+      x="926"
+      y="140"
+      fill="#F8FAFC"
+      font-family="monospace"
+      font-size="16"
+    >
+      Build better things
+    </text>
+
+
+    <text
+      x="926"
+      y="172"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="12"
+    >
+      TRAJECTORY
+    </text>
+
+
+    <text
+      x="926"
+      y="194"
+      fill="#67E8F9"
+      font-family="monospace"
+      font-size="15"
+    >
+      Learning ↑ Shipping ↑
+    </text>
+
+
+    <text
+      x="926"
+      y="226"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="12"
+    >
+      SIGNAL
+    </text>
+
+
+    <text
+      x="926"
+      y="248"
+      fill="#C4B5FD"
+      font-family="monospace"
+      font-size="13"
+    >
+      Creative • Focused • Consistent
+    </text>
+
+
+    <!-- ===================================================== -->
+    <!-- LIVE MINI BAR GRAPH -->
+    <!-- ===================================================== -->
+
     <g transform="translate(1040 108)">
-      <rect x="0" y="50" width="12" height="26" rx="3" fill="#22D3EE">
-        <animate attributeName="height" values="26;40;26" dur="2.2s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="50;36;50" dur="2.2s" repeatCount="indefinite"/>
+
+      <rect
+        x="0"
+        y="50"
+        width="12"
+        height="26"
+        rx="3"
+        fill="#22D3EE"
+      >
+
+        <animate
+          attributeName="height"
+          values="26;40;26"
+          dur="2.2s"
+          repeatCount="indefinite"
+        />
+
+        <animate
+          attributeName="y"
+          values="50;36;50"
+          dur="2.2s"
+          repeatCount="indefinite"
+        />
+
       </rect>
-      <rect x="20" y="36" width="12" height="40" rx="3" fill="#0EA5E9">
-        <animate attributeName="height" values="40;22;40" dur="2.4s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="36;54;36" dur="2.4s" repeatCount="indefinite"/>
+
+
+      <rect
+        x="20"
+        y="36"
+        width="12"
+        height="40"
+        rx="3"
+        fill="#0EA5E9"
+      >
+
+        <animate
+          attributeName="height"
+          values="40;22;40"
+          dur="2.4s"
+          repeatCount="indefinite"
+        />
+
+        <animate
+          attributeName="y"
+          values="36;54;36"
+          dur="2.4s"
+          repeatCount="indefinite"
+        />
+
       </rect>
-      <rect x="40" y="22" width="12" height="54" rx="3" fill="#6366F1">
-        <animate attributeName="height" values="54;36;54" dur="2.8s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="22;40;22" dur="2.8s" repeatCount="indefinite"/>
+
+
+      <rect
+        x="40"
+        y="22"
+        width="12"
+        height="54"
+        rx="3"
+        fill="#6366F1"
+      >
+
+        <animate
+          attributeName="height"
+          values="54;36;54"
+          dur="2.8s"
+          repeatCount="indefinite"
+        />
+
+        <animate
+          attributeName="y"
+          values="22;40;22"
+          dur="2.8s"
+          repeatCount="indefinite"
+        />
+
       </rect>
-      <rect x="60" y="12" width="12" height="64" rx="3" fill="#8B5CF6">
-        <animate attributeName="height" values="64;28;64" dur="2.6s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="12;48;12" dur="2.6s" repeatCount="indefinite"/>
+
+
+      <rect
+        x="60"
+        y="12"
+        width="12"
+        height="64"
+        rx="3"
+        fill="#8B5CF6"
+      >
+
+        <animate
+          attributeName="height"
+          values="64;28;64"
+          dur="2.6s"
+          repeatCount="indefinite"
+        />
+
+        <animate
+          attributeName="y"
+          values="12;48;12"
+          dur="2.6s"
+          repeatCount="indefinite"
+        />
+
       </rect>
+
     </g>
 
-    <!-- Bottom chips -->
-    <g font-family="monospace" font-size="14">
-      <rect x="360" y="268" width="118" height="28" rx="14" fill="#0F172A" stroke="#334155"/>
-      <text x="419" y="286" text-anchor="middle" fill="#E2E8F0">IT STUDENT</text>
 
-      <rect x="492" y="268" width="130" height="28" rx="14" fill="#0F172A" stroke="#334155"/>
-      <text x="557" y="286" text-anchor="middle" fill="#67E8F9">FULL-STACK</text>
+    <!-- ===================================================== -->
+    <!-- BOTTOM STATUS CHIPS -->
+    <!-- ===================================================== -->
 
-      <rect x="636" y="268" width="112" height="28" rx="14" fill="#0F172A" stroke="#334155"/>
-      <text x="692" y="286" text-anchor="middle" fill="#C4B5FD">CLOUD</text>
+    <g
+      font-family="monospace"
+      font-size="14"
+    >
 
-      <rect x="762" y="268" width="128" height="28" rx="14" fill="#0F172A" stroke="#334155"/>
-      <text x="826" y="286" text-anchor="middle" fill="#93C5FD">PROBLEM SOLVER</text>
+      <rect
+        x="360"
+        y="268"
+        width="118"
+        height="28"
+        rx="14"
+        fill="#0F172A"
+        stroke="#334155"
+      />
+
+      <text
+        x="419"
+        y="286"
+        text-anchor="middle"
+        fill="#E2E8F0"
+      >
+        IT STUDENT
+      </text>
+
+
+      <rect
+        x="492"
+        y="268"
+        width="130"
+        height="28"
+        rx="14"
+        fill="#0F172A"
+        stroke="#334155"
+      />
+
+      <text
+        x="557"
+        y="286"
+        text-anchor="middle"
+        fill="#67E8F9"
+      >
+        FULL-STACK
+      </text>
+
+
+      <rect
+        x="636"
+        y="268"
+        width="112"
+        height="28"
+        rx="14"
+        fill="#0F172A"
+        stroke="#334155"
+      />
+
+      <text
+        x="692"
+        y="286"
+        text-anchor="middle"
+        fill="#C4B5FD"
+      >
+        CLOUD
+      </text>
+
+
+      <rect
+        x="762"
+        y="268"
+        width="128"
+        height="28"
+        rx="14"
+        fill="#0F172A"
+        stroke="#334155"
+      />
+
+      <text
+        x="826"
+        y="286"
+        text-anchor="middle"
+        fill="#93C5FD"
+      >
+        PROBLEM SOLVER
+      </text>
+
     </g>
 
-    <!-- Pulse line -->
-    <path d="M40 306 H250 L266 292 L282 306 L298 284 L314 306 H1160" stroke="url(#neonLine)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowSoft)">
-      <animate attributeName="opacity" values="0.65;1;0.75;1" dur="3s" repeatCount="indefinite"/>
+
+    <!-- ===================================================== -->
+    <!-- SYSTEM PULSE -->
+    <!-- ===================================================== -->
+
+    <path
+      d="M40 306 H250 L266 292 L282 306 L298 284 L314 306 H1160"
+      stroke="url(#neonLine)"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      filter="url(#glowSoft)"
+    >
+
+      <animate
+        attributeName="opacity"
+        values="0.65;1;0.75;1"
+        dur="3s"
+        repeatCount="indefinite"
+      />
+
     </path>
+
+
   </g>
+
 </svg>
