@@ -37,6 +37,7 @@ src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=2
 ```yaml
 identity:
   name: Mussab Alhashmmey
+
   role:
     - IT Student
     - Developer
@@ -297,23 +298,44 @@ src="https://streak-stats.demolab.com?user=mosabalhashmmey-alt&theme=github-dark
 <div align="center">
 
 <img
-src="https://github-readme-activity-graph.vercel.app/graph?username=mosabalhashmmey-alt&bg_color=020617&color=A78BFA&line=38BDF8&point=FFFFFF&area=true&area_color=312E81&hide_border=true&radius=12"
-width="98%"
+src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mosabalhashmmey-alt&theme=github_dark&utcOffset=3"
+height="180"
+/>
+
+<img
+src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=mosabalhashmmey-alt&theme=github_dark"
+height="180"
 />
 
 </div>
 
 ---
 
-# `08 // ACHIEVEMENT MATRIX`
+# `08 // ACTIVITY INTELLIGENCE`
 
 <div align="center">
 
 <img
-src="https://github-profile-trophy.vercel.app/?username=mosabalhashmmey-alt&theme=algolia&no-frame=true&no-bg=true&margin-w=10&margin-h=10&row=1&column=6"
+src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mosabalhashmmey-alt&theme=github_dark"
+width="760"
 />
 
 </div>
+
+<details>
+<summary><b>📡 TELEMETRY NOTES</b></summary>
+
+<br/>
+
+```txt
+SIGNAL SOURCE     : GitHub activity
+TIMEZONE          : UTC+03
+PROFILE STATE     : ACTIVE
+DATA MODE         : LIVE / GENERATED
+VISUAL THEME      : DEEP SPACE
+```
+
+</details>
 
 ---
 
@@ -660,9 +682,9 @@ HTTP/1.1 202 ACCEPTED
 
 ---
 
-<div align="center">
-
 # `17 // END OF TRANSMISSION`
+
+<div align="center">
 
 <img
 src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=1500&pause=400&color=38BDF8&center=true&vCenter=true&repeat=true&width=900&height=70&lines=%5BBUILD%5D+something+useful;%5BLEARN%5D+something+new;%5BBREAK%5D+something+accidentally;%5BFIX%5D+something+important;%5BSHIP%5D+something+real;%5BREPEAT%5D"
